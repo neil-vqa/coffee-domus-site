@@ -1,0 +1,330 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	font-family: 'Montserrat', sans-serif;
+	color: #ffffff;
+	background-image: url("./pics/people-inside-bar.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(0,0,0,0.7);
+	height: 100vh;
+}
+
+.brand {
+	font-family: 'Raleway', sans-serif;
+	font-size: 70px;
+	font-weight: 500;
+}
+
+.sidepanel  {
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: #111;
+	overflow-x: hidden;
+	transition: 0.3s;
+	padding-top: 100px;
+}
+
+.sidepanel a {
+	padding: 20px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+	text-align: center;
+	transition: 0.3s;
+}
+
+.sidepanel a:hover {
+	color: #f1f1f1;
+}
+
+.sidepanel .closebtn {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	font-size: 50px;
+}
+
+.closebtn {
+	background-color: #111;
+	color: #ffffff;
+	padding: 10px 15px;
+	border: none;
+	cursor: pointer;
+}
+
+.openbtn {
+	position: fixed;
+	top: 5px;
+	left: 5px;
+	font-size: 45px;
+	cursor: pointer;
+	background-color: rgb(0,0,0,0.2);
+	color: #ffffff;
+	padding: 10px 15px;
+	border-color: rgb(0,0,0,0.2);
+	border-width: 0.3px;
+	border-radius: 10px;
+}
+
+.openbtn:hover {
+	background-color: #000000;
+}
+
+.right-panel {
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	height: 100%;
+	top: 0;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+	background-color: #222;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	transition: 0.3s;
+}
+
+.content {
+	padding: 40px;
+}
+
+.subcontent {
+	padding: 10px;
+}
+
+.head-text {
+	position: absolute; 
+	top: 100px; 
+	background: rgba(0, 0, 0, 0.5); 
+	width: 100%;
+	transition: .5s ease;
+	opacity:0;
+	color: #ffffff;
+	font-size: 20px;
+	padding: 20px;
+	text-align: center;
+}
+
+.head-img:hover .head-text {
+	opacity: 1;
+}
+
+.section-head {
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.menu-list {
+	display: flex;
+	align-items: center;
+}
+
+.menu-list > p {
+	flex: 1;
+	margin: 50px;
+}
+
+.menu-list > img {
+	flex: 1;
+}
+
+.menu-list > button {
+	flex: 1;
+}
+
+.list-style {
+	padding: 10px 50px;
+}
+
+.list-style > li {
+	padding: 10px;
+}
+
+.custom-btn {
+	display: block;
+	background-color: #333333;
+	color: #ffffff;
+	padding: 14px 20px;
+	margin: 10px auto;
+	border: none;
+	cursor: pointer;
+	width: 70%;
+}
+
+.custom-btn:hover {
+	background-color: #f3f3f3;
+	color: #333333;
+}
+
+.cancel-btn {
+	background-color: #f44336;
+	color: #ffffff;
+	display: block;;
+	padding: 14px 20px;
+	margin: 10px auto;
+	border: none;
+	cursor: pointer;
+	width: 70%;
+}
+
+.cancel-btn:hover {
+	opacity: 0.5;
+}
+
+input, textarea {
+	display: block;
+	width: 80%;
+	padding: 12px 20px;
+	margin: 10px auto;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+.modal {
+	display: none; 
+	position: fixed; 
+	z-index: 2;
+	left: 0;
+	top: 0;
+	width: 100%; 
+	height: 100%; 
+	overflow: auto; 
+	background-color: rgba(0,0,0,0.8);
+	padding: 50px;
+}
+
+.modal-title {
+	text-align: center;
+	padding: 10px;
+}
+
+.modal-content {
+	display: block;
+	background-color: #555555;
+	margin: auto;
+	padding: 30px;
+	width: 70%;	
+}	
+
+.animate {
+	-webkit-animation: animatezoom 0.6s;
+	animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+	from {-webkit-transform: scale(0)} 
+	to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+	from {transform: scale(0)} 
+	to {transform: scale(1)}
+}
+
+.mid-text {
+	position: relative; 
+	bottom: 350px; 
+	background: rgba(0, 0, 0, 0.5); 
+	width: 100%;
+	transition: .5s ease;
+	opacity:0;
+	color: #ffffff;
+	font-size: 20px;
+	padding: 20px;
+	text-align: center;
+}
+
+.mid-img:hover .mid-text {
+	opacity: 1;
+}
+
+.showcase {
+	padding: 30px;
+}
+
+.buy-btn {
+	background-color: #333333;
+	color: #ffffff;
+	padding: 14px 20px;
+	margin: 10px auto;
+	border: none;
+	cursor: pointer;
+	width: auto;
+}
+
+.buy-btn:hover {
+	background-color: #f3f3f3;
+	color: #333333;
+}
+
+.text-layout {
+	padding: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+	.brand {
+		display: block;
+		margin: auto;
+		text-align: center;
+	}
+
+	.section-head {
+		margin-bottom: 7px;
+	}
+	
+	.menu-list {
+		display: block;
+	}
+	
+	.menu-list > p {
+		margin: 5px;
+	}
+	
+	.list-style {
+		padding: 5px;
+	}
+	
+	.list-style > li {
+		padding: 3px;
+	}
+	
+	.modal-content {
+		width: 95%;	
+	}
+	
+	.mid-text {
+		bottom: 200px;
+	}
+	
+	.buy-btn {
+		width: 100%;
+		margin-top: 3px;
+		margin-bottom: 35px;
+	}
+	
+	.text-layout {
+		padding: 5px;
+	}
+}
+
+
+

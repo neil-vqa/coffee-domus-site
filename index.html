@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Coffee Domus Meae - The Right Place To Be With Your Coffee</title>
+	
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@500&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="./static/favicon.ico">
+	<link rel="stylesheet" href="./static/custom.css">
+	
+	<script src="https://kit.fontawesome.com/9b56a9cf19.js" crossorigin="anonymous"></script>
+	
+</head>
+<body>
+	<main>
+		<div class="center">
+			<h1 class="brand">Coffee Domus Meae</h1>
+			<div id="sidepanel" class="sidepanel">
+				<button class="closebtn" onclick="closeNav()">&times;</button>
+				<a href="#menu">Menu</a>
+				<a href="#reservations">Reservations</a>
+				<a href="#delivery">Delivery</a>
+				<a href="#shop">Shop</a>
+				<a href="#contact">Contact</a>
+				<a href="#about">About</a>
+			</div>
+			<button class="openbtn" onclick="openNav()"><i class="fas fa-mug-hot"></i></button>
+			<div id="right-panel" class="right-panel">
+				<div class="head-img">
+					<img src="./static/pics/cafe-latte.jpg" alt="Cafe latte" width="100%" height="100%" />
+					<div class="head-text">The Right Place To Be With Your Coffee</div>
+				</div>
+				<div id="menu" class="content">
+					<h1 class="section-head">Our Menu</h1>
+					<div class="subcontent menu-list">
+						<img src="./static/pics/coffee-item-1.png" alt="Pour" width="100%" height="50%" />
+						<p>POUR OVER<br>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe.</p>
+					</div>
+					<div class="subcontent menu-list">
+						<img src="./static/pics/coffee-item-2.png" alt="Pour" width="100%" height="50%" />
+						<p>MOCHA LATTE<br>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe.</p>
+					</div>
+					<div class="subcontent menu-list">
+						<img src="./static/pics/coffee-item-3.png" alt="Pour" width="100%" height="50%" />
+						<p>ESPRESSO<br>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe.</p>
+					</div>
+				</div>
+				<div id="reservations" class="content">
+					<h1 class="section-head">Your Reservations</h1>
+					<div class="subcontent">
+						<ul class="list-style">
+							<li>Reservations must be made at least 2 hours before the scheduled time.
+							Otherwise, the reservation will be rejected automatically.</li>
+							<li>A confirmation email and SMS will be sent to the email and contact number 
+							you have provided in the form.</li>
+							<li>Excepteur sint occaecat cupidatat non proident, sunt in 
+							culpa qui officia deserunt mollit anim id est laborum.</li>
+							<li>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+							 consectetur, adipisci velit, sed quia non numquam ei.</li>
+							 <li>Duis sit amet sodales felis. Duis nunc eros, mattis at dui ac, 
+							 convallis semper risus. In adipiscing ultrices tellus, in suscipit massa vehicula eu.</li>
+						</ul>
+					</div>
+					<button class="custom-btn" onclick="openReserve()">Make a Reservation</button>
+					<div id="reserve-form" class="modal">
+						<form name="reservations" class="modal-content animate" netlify>
+							<div class="fields">
+								<h3 class="modal-title">Please provide your reservation details.</h3>
+								<input type="text" placeholder="Enter name" name="name" required>
+								<input type="email" placeholder="Enter email" name="email" required>				
+								<input type="text" placeholder="Enter phone number" name="phone" required>
+								<input type="date" placeholder="Reservation date" name="date" required>
+								<input type="text" placeholder="Reservation time" name="time" required>
+								<input type="number" placeholder="Number of guests" name="person" required>
+								<input type="text" placeholder="Specify other requests (optional)" name="other">
+								<button class="custom-btn" type="submit" style="margin-top: 30px;">Reserve</button>
+								<button  class="cancel-btn" type="button" onclick="closeReserve()">Cancel</button>		
+							</div>
+						</form>
+					</div>
+				</div>
+				<div id="delivery" class="content">
+					<h1 class="section-head">We Deliver</h1>
+					<div class="subcontent">
+						<ul class="list-style">
+							<li>For deliveries, a minimum purchase of $$$.$$ is required.
+							Delivery service only operates within the Metropolitan area.</li>
+							<li>Delivery service (1): +123 45</li>
+							<li>Delivery service (2): +678 45</li>
+							<li>Delivery service (3): +456 45</li>
+							<li>Nulla aliquet porttitor venenatis. Donec a dui et dui fringilla 
+							consectetur id nec massa. Aliquam erat volutpat. </li>
+							<li>Duis sit amet sodales felis. Duis nunc eros, mattis at dui ac,
+							 convallis semper risus. In adipiscing ultrices tellus, in suscipit massa vehicula eu.</li>
+						</ul>
+					</div>	
+				</div>
+				<div class="mid-img">
+					<img src="./static/pics/breakfast.jpg" alt="Breakfast brew" width="100%" height="100%" />
+					<div class="mid-text">The Home of Exceptional Coffee</div>
+				</div>
+				<div id="shop" class="content">
+					<h1 class="section-head">The Shop</h1>
+					<p class="text-layout">We have a few but quality in-house products. 
+					We also sell third-party products which you can purchase in our shops nationwide.
+					Ut aliquet tristique nisl vitae volutpat. Nulla aliquet porttitor venenatis.</p>
+					<p class="text-layout">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
+					doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae 
+					vitae dicta sunt explicabo. </p>
+					<div class="menu-list">
+						<img src="./static/pics/item-1.jpg" alt="beans" width="100%" height="50%" />
+						<img src="./static/pics/item-2.jpg" alt="beans" width="100%" height="50%" />
+					</div>
+					<button class="custom-btn" onclick="openProduct()" style="margin-top: 25px;">Buy Products</button>
+					<div id="product-modal" class="modal">
+						<div class="modal-content animate">
+							<h3 class="modal-title">Our In-house Quality Products</h3>
+							<div class="showcase">
+								<div class="menu-list">
+									<img src="./static/pics/item-1.jpg" alt="beans" width="100%" height="50%" />
+									<p>Quality beans from the finest farms worldwide.</p>
+									<button class="buy-btn">Buy</button>
+								</div>
+								<div class="menu-list">
+									<img src="./static/pics/item-2.jpg" alt="beans" width="100%" height="50%" />
+									<p>Iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum.</p>
+									<button class="buy-btn">Buy</button>
+								</div>
+								<div class="menu-list">
+									<img src="./static/pics/item-3.jpg" alt="beans" width="100%" height="50%" />
+									<p>Et harum quidem rerum facilis est et expedita distinctio.</p>
+									<button class="buy-btn">Buy</button>
+								</div>
+								<div class="menu-list">
+									<img src="./static/pics/item-4.jpg" alt="beans" width="100%" height="50%" />
+									<p>Itaque earum rerum hic tenetur a sapiente ut aut reiciendis voluptatibus maiores.</p>
+									<button class="buy-btn">Buy</button>
+								</div>
+								<div class="menu-list">
+									<img src="./static/pics/item-5.jpg" alt="beans" width="100%" height="50%" />
+									<p>Praesentium voluptatum deleniti atque corrupti quos dolores.</p>
+									<button class="buy-btn">Buy</button>
+								</div>
+								<div class="menu-list">
+									<img src="./static/pics/item-6.jpg" alt="beans" width="100%" height="50%" />
+									<p>Praesentium voluptatum deleniti atque corrupti quos dolores.</p>
+									<button class="buy-btn">Buy</button>
+								</div>
+								<div class="menu-list">
+									<img src="./static/pics/item-7.jpg" alt="beans" width="100%" height="50%" />
+									<p>Praesentium voluptatum deleniti atque corrupti quos dolores.</p>
+									<button class="buy-btn">Buy</button>
+								</div>
+							</div>
+							<button  class="cancel-btn" type="button" onclick="closeProduct()">Close</button>
+						</div>
+					</div>
+				</div>
+				<div id="contact" class="content">
+					<h1 class="section-head">Contact Us</h1>
+					<h3 class="text-layout">Email <br> Send to cdm@mail.com</h3>
+					<div class="email-form">
+						<form name="email-us" netlify>
+							<input type="text" placeholder="Name" name="name" required>
+							<input type="email" placeholder="Email" name="email" required>
+							<textarea name="inquiry" rows="8" cols="40" placeholder="Message"></textarea>
+							<button type="submit" class="custom-btn">Send</button>
+						</form>
+					</div>
+					<h3 class="text-layout">Phone <br> Main Shop: +123 45 678
+					<br> West Central Chain Main: +123 45 678
+					<br> East Central Chain Main: +123 45 678 
+					<br> North Central Chain Main: +123 45 678</h3>
+					
+					<h3 class="text-layout">Address <br> Main Shop: Ducimus qui blanditiis St. 
+					<br> West Central Chain Main: Nam libero tempore St.
+					<br> East Central Chain Main: Itaque earum rerum Drive
+					<br> North Central Chain Main: Nobis est eligendi Road</h3>
+				</div>
+				<div id="about" class="content">
+					<h1 class="section-head">About Us</h1>
+					<p class="text-layout">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+					Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
+					<p class="text-layout">Ut enim ad minima veniam, quis nostrum exercitationem. 
+					ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam.</p>
+					<p class="text-layout">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus
+					quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+					Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet 
+					ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+					<p class="text-layout"><strong>Site created by NV Alino.
+					For projects, email to nvqa.business@gmail.com</strong></p>
+				</div>
+				<div>
+					<img src="./static/pics/coffee-cup.jpg" alt="cup" width="100%" height="100%" />
+				</div>				
+			</div>
+		</div>
+	</main>
+	
+	<script src="./static/app.js" type="text/javascript"></script>
+	
+</body>
+</html>
