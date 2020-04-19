@@ -6,6 +6,7 @@
 	<title>Coffee Domus Meae - The Right Place To Be With Your Coffee</title>
 	
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.11/default/snipcart.css" />
 	<link rel="shortcut icon" href="./static/favicon.ico">
 	<link rel="stylesheet" href="./static/custom.css">
 	
@@ -120,42 +121,86 @@
 					<button class="custom-btn" onclick="openProduct()" style="margin-top: 25px;">Buy Products</button>
 					<div id="product-modal" class="modal">
 						<div class="modal-content animate">
+							<button  class="closebtn" type="button" onclick="closeProduct()" 
+							style="background-color: #444444;">Close</button>
 							<h3 class="modal-title">Our In-house Quality Products</h3>
 							<div class="showcase">
 								<div class="menu-list">
 									<img src="./static/pics/item-1.jpg" alt="beans" width="100%" height="50%" />
 									<p>Quality beans from the finest farms worldwide.</p>
-									<button class="buy-btn">Buy</button>
+									<button class="buy-btn snipcart-add-item"
+									data-item-id="coffee-beans"
+									data-item-price="79.99"
+									data-item-url="/"
+									data-item-description="sapiente ut aut reiciendis"
+									data-item-image="./static/pics/item-1.jpg"
+									data-item-name="Coffee Beans">Add to cart</button>
 								</div>
 								<div class="menu-list">
-									<img src="./static/pics/item-2.jpg" alt="beans" width="100%" height="50%" />
+									<img src="./static/pics/item-2.jpg" alt="maker" width="100%" height="50%" />
 									<p>Iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum.</p>
-									<button class="buy-btn">Buy</button>
+									<button class="buy-btn snipcart-add-item"
+									data-item-id="coffee-maker"
+									data-item-price="299.99"
+									data-item-url="/"
+									data-item-description="sapiente ut aut reiciendis"
+									data-item-image="./static/pics/item-2.jpg"
+									data-item-name="Coffee Maker">Add to cart</button>
 								</div>
 								<div class="menu-list">
-									<img src="./static/pics/item-3.jpg" alt="beans" width="100%" height="50%" />
+									<img src="./static/pics/item-3.jpg" alt="cup1" width="100%" height="50%" />
 									<p>Et harum quidem rerum facilis est et expedita distinctio.</p>
-									<button class="buy-btn">Buy</button>
+									<button class="buy-btn snipcart-add-item"
+									data-item-id="coffee-cup1"
+									data-item-price="14.99"
+									data-item-url="/"
+									data-item-description="sapiente ut aut reiciendis"
+									data-item-image="./static/pics/item-3.jpg"
+									data-item-name="Coffee Cup 1">Add to cart</button>
 								</div>
 								<div class="menu-list">
-									<img src="./static/pics/item-4.jpg" alt="beans" width="100%" height="50%" />
+									<img src="./static/pics/item-4.jpg" alt="cup2" width="100%" height="50%" />
 									<p>Itaque earum rerum hic tenetur a sapiente ut aut reiciendis voluptatibus maiores.</p>
-									<button class="buy-btn">Buy</button>
+									<button class="buy-btn snipcart-add-item"
+									data-item-id="coffee-cup2"
+									data-item-price="14.99"
+									data-item-url="/"
+									data-item-description="sapiente ut aut reiciendis"
+									data-item-image="./static/pics/item-4.jpg"
+									data-item-name="Coffee Cup 2">Add to cart</button>
 								</div>
 								<div class="menu-list">
-									<img src="./static/pics/item-5.jpg" alt="beans" width="100%" height="50%" />
+									<img src="./static/pics/item-5.jpg" alt="cup3" width="100%" height="50%" />
 									<p>Praesentium voluptatum deleniti atque corrupti quos dolores.</p>
-									<button class="buy-btn">Buy</button>
+									<button class="buy-btn snipcart-add-item"
+									data-item-id="coffee-cup3"
+									data-item-price="14.99"
+									data-item-url="/"
+									data-item-description="sapiente ut aut reiciendis"
+									data-item-image="./static/pics/item-5.jpg"
+									data-item-name="Coffee Cup 3">Add to cart</button>
 								</div>
 								<div class="menu-list">
-									<img src="./static/pics/item-6.jpg" alt="beans" width="100%" height="50%" />
+									<img src="./static/pics/item-6.jpg" alt="macaroons" width="100%" height="50%" />
 									<p>Praesentium voluptatum deleniti atque corrupti quos dolores.</p>
-									<button class="buy-btn">Buy</button>
+									<button class="buy-btn snipcart-add-item"
+									data-item-id="macaroons"
+									data-item-price="24.99"
+									data-item-url="/"
+									data-item-description="sapiente ut aut reiciendis"
+									data-item-image="./static/pics/item-6.jpg"
+									data-item-name="Macaroons">Add to cart</button>
 								</div>
 								<div class="menu-list">
-									<img src="./static/pics/item-7.jpg" alt="beans" width="100%" height="50%" />
+									<img src="./static/pics/item-7.jpg" alt="cookies" width="100%" height="50%" />
 									<p>Praesentium voluptatum deleniti atque corrupti quos dolores.</p>
-									<button class="buy-btn">Buy</button>
+									<button class="buy-btn snipcart-add-item"
+									data-item-id="cookies"
+									data-item-price="24.99"
+									data-item-url="/"
+									data-item-description="sapiente ut aut reiciendis"
+									data-item-image="./static/pics/item-7.jpg"
+									data-item-name="Choco Cookies">Add to cart</button>
 								</div>
 							</div>
 							<button  class="cancel-btn" type="button" onclick="closeProduct()">Close</button>
@@ -205,6 +250,8 @@
 					<img src="./static/pics/coffee-cup.jpg" alt="cup" width="100%" height="100%" />
 				</div>				
 			</div>
+			<div id="snipcart" data-api-key="MGVhYzg0NzItMzgzYy00Yzg4LTgxNzctZWE3NDUyNzRiNDAwNjM3MjI5MDA3NjcwMjQwMzAy" hidden></div>
+			<script src="https://cdn.snipcart.com/themes/v3.0.11/default/snipcart.js"></script>
 		</div>
 	</main>
 	

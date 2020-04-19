@@ -176,7 +176,7 @@ html, body {
 	margin: 10px auto;
 	border: none;
 	cursor: pointer;
-	width: 70%;
+	width: 40%;
 }
 
 .custom-btn:hover {
@@ -192,7 +192,7 @@ html, body {
 	margin: 10px auto;
 	border: none;
 	cursor: pointer;
-	width: 70%;
+	width: 40%;
 }
 
 .cancel-btn:hover {
@@ -322,6 +322,14 @@ input, textarea {
 	
 	.mid-text {
 		bottom: 200px;
+	}
+	
+	input, textarea {
+		width: 100%;
+	}
+	
+	.custom-btn, .cancel-btn {
+		width: 100%;
 	}
 	
 	.buy-btn {
