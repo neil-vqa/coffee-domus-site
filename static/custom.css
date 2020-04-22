@@ -156,6 +156,8 @@ html, body {
 }
 
 .section-head {
+	font-family: 'Raleway', sans-serif;
+	font-size: 30px;
 	margin-bottom: 30px;
 	text-align: center;
 }
@@ -236,7 +238,7 @@ input, textarea {
 	height: 100%; 
 	overflow: auto; 
 	background-color: rgba(0,0,0,0.8);
-	padding: 50px;
+	padding: 30px;
 }
 
 .modal-title {
@@ -284,8 +286,22 @@ input, textarea {
 	opacity: 1;
 }
 
+.preview-items {
+	padding: 20px; 
+}
+
+.preview-item {
+	width: 50%; 
+	height: 50%;
+}
+
 .showcase {
 	padding: 30px;
+}
+
+.showcase-item {
+	width: 50%; 
+	height: 50%;
 }
 
 .buy-btn {
@@ -307,14 +323,25 @@ input, textarea {
 	padding: 20px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 780px) {
 	.brand {
 		display: block;
 		margin: auto;
 		text-align: center;
 	}
+	
+	.sidepanel a {
+		padding: 20px 0px;
+		text-decoration: none;
+		font-size: 18px;
+	}
+	
+	.content {
+		padding: 20px;
+	}
 
 	.section-head {
+		font-size: 25px;
 		margin-bottom: 7px;
 	}
 	
@@ -323,7 +350,7 @@ input, textarea {
 	}
 	
 	.menu-list > p {
-		margin: 5px;
+		margin: 10px 5px;
 	}
 	
 	.list-style {
@@ -331,11 +358,17 @@ input, textarea {
 	}
 	
 	.list-style > li {
+		font-size: 15px;
 		padding: 3px;
 	}
 	
+	.modal {
+		background-color: #555555;
+		padding: 0px;
+	}
+	
 	.modal-content {
-		width: 95%;	
+		width: 100%;	
 	}
 	
 	.mid-text {
@@ -350,6 +383,18 @@ input, textarea {
 		width: 100%;
 	}
 	
+	.preview-items {
+		padding: 10px 0px 0px 0px; 
+	}
+	
+	.preview-item {
+		width: 100%; 
+	}
+	
+	.showcase-item {
+		width: 100%; 
+	}
+	
 	.buy-btn {
 		width: 100%;
 		margin-top: 3px;
@@ -357,6 +402,7 @@ input, textarea {
 	}
 	
 	.text-layout {
+		font-size: 15px;
 		padding: 5px;
 	}
 }

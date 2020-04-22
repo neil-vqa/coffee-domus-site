@@ -32,10 +32,10 @@
 				<i class="fab fa-google-plus-square"></i>
 			</div>
 			<div class="location">
-				<h4>Main Café</h4>
-				<h4>Ducimus qui blanditiis St.</h4>
-				<h4>Open 7AM to 11PM, Mondays to Sundays</h4>
-				<h4>+123 45 678 </h4>	
+				<h5>Main Café</h5>
+				<h5>Ducimus qui blanditiis St.</h5>
+				<h5>Open 7AM to 11PM, Mondays to Sundays</h5>
+				<h5>+123 45 678 </h5>	
 			</div>
 			<button class="openbtn blink" onclick="openNav()"><i class="fas fa-mug-hot"></i></button>
 			<div id="right-panel" class="right-panel">
@@ -79,9 +79,9 @@
 						<form name="reservations" class="modal-content animate" netlify>
 							<div class="fields">
 								<h3 class="modal-title">Please provide your reservation details.</h3>
-								<input type="text" placeholder="Enter name" name="name" required>
-								<input type="email" placeholder="Enter email" name="email" required>				
-								<input type="text" placeholder="Enter phone number" name="phone" required>
+								<input type="text" placeholder="Name" name="name" required>
+								<input type="email" placeholder="Email" name="email" required>				
+								<input type="text" placeholder="Phone number" name="phone" required>
 								<input type="date" placeholder="Reservation date" name="date" required>
 								<input type="text" placeholder="Reservation time" name="time" required>
 								<input type="number" placeholder="Number of guests" name="person" required>
@@ -120,9 +120,9 @@
 					<p class="text-layout">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
 					doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae 
 					vitae dicta sunt explicabo. </p>
-					<div class="menu-list">
-						<img src="./static/pics/item-1.jpg" alt="beans" width="100%" height="50%" />
-						<img src="./static/pics/item-2.jpg" alt="beans" width="100%" height="50%" />
+					<div class="menu-list preview-items">
+						<img src="./static/pics/item-1.jpg" alt="beans" class="preview-item"/>
+						<img src="./static/pics/item-2.jpg" alt="maker" class="preview-item"/>
 					</div>
 					<button class="custom-btn" onclick="openProduct()" style="margin-top: 25px;">Buy Products</button>
 					<div id="product-modal" class="modal">
@@ -132,7 +132,7 @@
 							<h3 class="modal-title">Our In-house Quality Products</h3>
 							<div class="showcase">
 								<div class="menu-list">
-									<img src="./static/pics/item-1.jpg" alt="beans" width="100%" height="50%" />
+									<img src="./static/pics/item-1.jpg" alt="beans" class="showcase-item"/>
 									<p>Quality beans from the finest farms worldwide.</p>
 									<button class="buy-btn snipcart-add-item"
 									data-item-id="coffee-beans"
@@ -143,7 +143,7 @@
 									data-item-name="Coffee Beans">Add to cart</button>
 								</div>
 								<div class="menu-list">
-									<img src="./static/pics/item-2.jpg" alt="maker" width="100%" height="50%" />
+									<img src="./static/pics/item-2.jpg" alt="maker" class="showcase-item"/>
 									<p>Iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum.</p>
 									<button class="buy-btn snipcart-add-item"
 									data-item-id="coffee-maker"
@@ -154,7 +154,7 @@
 									data-item-name="Coffee Maker">Add to cart</button>
 								</div>
 								<div class="menu-list">
-									<img src="./static/pics/item-3.jpg" alt="cup1" width="100%" height="50%" />
+									<img src="./static/pics/item-3.jpg" alt="cup1" class="showcase-item"/>
 									<p>Et harum quidem rerum facilis est et expedita distinctio.</p>
 									<button class="buy-btn snipcart-add-item"
 									data-item-id="coffee-cup1"
@@ -165,7 +165,7 @@
 									data-item-name="Coffee Cup 1">Add to cart</button>
 								</div>
 								<div class="menu-list">
-									<img src="./static/pics/item-4.jpg" alt="cup2" width="100%" height="50%" />
+									<img src="./static/pics/item-4.jpg" alt="cup2" class="showcase-item"/>
 									<p>Itaque earum rerum hic tenetur a sapiente ut aut reiciendis voluptatibus maiores.</p>
 									<button class="buy-btn snipcart-add-item"
 									data-item-id="coffee-cup2"
@@ -176,7 +176,7 @@
 									data-item-name="Coffee Cup 2">Add to cart</button>
 								</div>
 								<div class="menu-list">
-									<img src="./static/pics/item-5.jpg" alt="cup3" width="100%" height="50%" />
+									<img src="./static/pics/item-5.jpg" alt="cup3" class="showcase-item"/>
 									<p>Praesentium voluptatum deleniti atque corrupti quos dolores.</p>
 									<button class="buy-btn snipcart-add-item"
 									data-item-id="coffee-cup3"
@@ -187,7 +187,7 @@
 									data-item-name="Coffee Cup 3">Add to cart</button>
 								</div>
 								<div class="menu-list">
-									<img src="./static/pics/item-6.jpg" alt="macaroons" width="100%" height="50%" />
+									<img src="./static/pics/item-6.jpg" alt="macaroons" class="showcase-item"/>
 									<p>Praesentium voluptatum deleniti atque corrupti quos dolores.</p>
 									<button class="buy-btn snipcart-add-item"
 									data-item-id="macaroons"
@@ -198,7 +198,7 @@
 									data-item-name="Macaroons">Add to cart</button>
 								</div>
 								<div class="menu-list">
-									<img src="./static/pics/item-7.jpg" alt="cookies" width="100%" height="50%" />
+									<img src="./static/pics/item-7.jpg" alt="cookies" class="showcase-item"/>
 									<p>Praesentium voluptatum deleniti atque corrupti quos dolores.</p>
 									<button class="buy-btn snipcart-add-item"
 									data-item-id="cookies"
@@ -215,7 +215,7 @@
 				</section>
 				<section id="contact" class="content">
 					<h1 class="section-head">Contact Us</h1>
-					<h3 class="text-layout">Email <br> Send to cdm@mail.com</h3>
+					<h4 class="text-layout">Email <br> Send to cdm@mail.com</h4>
 					<div class="email-form">
 						<form name="email-us" netlify>
 							<input type="text" placeholder="Name" name="name" required>
@@ -224,19 +224,19 @@
 							<button type="submit" class="custom-btn">Send</button>
 						</form>
 					</div>
-					<h3 class="text-layout">Phone <br> Main Shop: +123 45 678
+					<h4 class="text-layout">Phone <br> Main Shop: +123 45 678
 					<br> West Central Chain Main: +123 45 678
 					<br> East Central Chain Main: +123 45 678 
-					<br> North Central Chain Main: +123 45 678</h3>
+					<br> North Central Chain Main: +123 45 678</h4>
 					
-					<h3 class="text-layout">Address <br> Main Shop: Ducimus qui blanditiis St. 
+					<h4 class="text-layout">Address <br> Main Shop: Ducimus qui blanditiis St. 
 					<br> West Central Chain Main: Nam libero tempore St.
 					<br> East Central Chain Main: Itaque earum rerum Drive
-					<br> North Central Chain Main: Nobis est eligendi Road</h3>
+					<br> North Central Chain Main: Nobis est eligendi Road</h4>
 					
-					<h3 class="text-layout">Shop Hours<br>
+					<h4 class="text-layout">Shop Hours<br>
 					All shops have the autonomy of setting their open hours and days.
-					<br>Generally, shops are open 9AM to 9PM, Mondays to Sundays.</h3 class="">
+					<br>Generally, shops are open 9AM to 9PM, Mondays to Sundays.</h4>
 					
 				</section>
 				<section id="about" class="content">
