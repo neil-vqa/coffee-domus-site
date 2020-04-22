@@ -230,7 +230,7 @@ input, textarea {
 
 .modal {
 	display: none; 
-	position: fixed; 
+	position: fixed !important; 
 	z-index: 2;
 	left: 0;
 	top: 0;
