@@ -22,12 +22,12 @@
 			<h1 class="brand">Coffee Domus Meae</h1>
 			<div id="sidepanel" class="sidepanel">
 				<button class="closebtn" onclick="closeNav()">&times;</button>
-				<a href="#menu">Menu</a>
-				<a href="#reservations">Reservations</a>
-				<a href="#delivery">Delivery</a>
-				<a href="#shop">Shop</a>
-				<a href="#contact">Contact</a>
-				<a href="#about">About</a>
+				<a href="#menu"><i class="fas fa-coffee"></i><p>Menu</p></a>
+				<a href="#reservations"><i class="fas fa-calendar-check"></i><p>Reservations</p></a>
+				<a href="#delivery"><i class="fas fa-truck"></i><p>Delivery</p></a>
+				<a href="#shop"><i class="fas fa-shopping-bag"></i><p>Shop</p></a>
+				<a href="#contact"><i class="fas fa-envelope"></i><p>Contact</p></a>
+				<a href="#about"><i class="fas fa-users"></i><p>About</p></a>
 			</div>
 			<div class="social">
 				<i class="fab fa-facebook-square"></i>
@@ -43,26 +43,44 @@
 			<button class="openbtn blink" onclick="openNav()"><i class="fas fa-mug-hot"></i></button>
 			<div id="right-panel" class="right-panel">
 				<div class="head-img">
-					<img src="./static/pics/cafe-latte.jpg" alt="Cafe latte" width="100%" height="100%" />
+					<picture>
+						<source media="(max-width: 425px)" srcset="./static/pics/cafe-latte-sm.webp" type="image/webp">
+						<source media="(max-width: 992px)" srcset="./static/pics/cafe-latte-med.webp" type="image/webp">
+						<source media="(max-width: 425px)" srcset="./static/pics/cafe-latte-sm.jpg" type="image/jpeg"> 
+						<source media="(max-width: 992px)" srcset="./static/pics/cafe-latte-med.jpg" type="image/jpeg"> 
+						<img src="./static/pics/cafe-latte-sm.jpg" alt="Cafe latte" width="100%" height="100%" />
+					</picture>
 					<div class="head-text">The Right Place To Be With Your Coffee</div>
 				</div>
 				<section id="menu" class="content">
-					<h1 class="section-head">Our Menu</h1>
+					<p class="section-head">Our Menu</p>
 					<div class="subcontent menu-list">
-						<img src="./static/pics/coffee-item-1.png" alt="Pour" width="100%" height="50%" />
+						<picture>
+							<source srcset="./static/pics/coffee-item-1.webp" type="image/webp" class="menu-pic">
+							<source srcset="./static/pics/coffee-item-1.png" type="image/png" class="menu-pic"> 
+							<img src="./static/pics/coffee-item-1.png" alt="Pour" class="menu-pic" />
+						</picture>
 						<p>POUR OVER<br>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe.</p>
 					</div>
 					<div class="subcontent menu-list">
-						<img src="./static/pics/coffee-item-2.png" alt="Pour" width="100%" height="50%" />
+						<picture>
+							<source srcset="./static/pics/coffee-item-2.webp" type="image/webp" class="menu-pic">
+							<source srcset="./static/pics/coffee-item-2.png" type="image/png" class="menu-pic"> 
+							<img src="./static/pics/coffee-item-2.png" alt="Pour" class="menu-pic" />
+						</picture>
 						<p>MOCHA LATTE<br>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe.</p>
 					</div>
 					<div class="subcontent menu-list">
-						<img src="./static/pics/coffee-item-3.png" alt="Pour" width="100%" height="50%" />
+						<picture>
+							<source srcset="./static/pics/coffee-item-3.webp" type="image/webp" class="menu-pic">
+							<source srcset="./static/pics/coffee-item-3.png" type="image/png" class="menu-pic"> 
+							<img src="./static/pics/coffee-item-3.png" alt="Pour" class="menu-pic" />
+						</picture>
 						<p>ESPRESSO<br>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe.</p>
 					</div>
 				</section>
 				<section id="reservations" class="content">
-					<h1 class="section-head">Your Reservations</h1>
+					<p class="section-head">Your Reservations</p>
 					<div class="subcontent">
 						<ul class="list-style">
 							<li>Reservations must be made at least 2 hours before the scheduled time.
@@ -96,7 +114,7 @@
 					</div>
 				</section>
 				<section id="delivery" class="content">
-					<h1 class="section-head">We Deliver</h1>
+					<p class="section-head">We Deliver</p>
 					<div class="subcontent">
 						<ul class="list-style">
 							<li>For deliveries, a minimum purchase of $$$.$$ is required.
@@ -112,11 +130,17 @@
 					</div>	
 				</section>
 				<div class="mid-img">
-					<img src="./static/pics/breakfast.jpg" alt="Breakfast brew" width="100%" height="100%" />
+					<picture>
+						<source media="(max-width: 425px)" srcset="./static/pics/breakfast-sm.webp" type="image/webp">
+						<source media="(max-width: 992px)" srcset="./static/pics/breakfast-med.webp" type="image/webp">
+						<source media="(max-width: 425px)" srcset="./static/pics/breakfast-sm.jpg" type="image/jpeg"> 
+						<source media="(max-width: 992px)" srcset="./static/pics/breakfast-med.jpg" type="image/jpeg"> 
+						<img src="./static/pics/breakfast.jpg" alt="Breakfast brew" width="100%" height="100%" />
+					</picture>
 					<div class="mid-text">The Home of Exceptional Coffee</div>
 				</div>
 				<section id="shop" class="content">
-					<h1 class="section-head">The Shop</h1>
+					<p class="section-head">The Shop</p>
 					<p class="text-layout">We have a few but quality in-house products. 
 					We also sell third-party products which you can purchase in our shops nationwide.
 					Ut aliquet tristique nisl vitae volutpat. Nulla aliquet porttitor venenatis.</p>
@@ -127,7 +151,7 @@
 						<img src="./static/pics/item-1.jpg" alt="beans" class="preview-item"/>
 						<img src="./static/pics/item-2.jpg" alt="maker" class="preview-item"/>
 					</div>
-					<button class="custom-btn" onclick="openProduct()" style="margin-top: 25px;">Buy Products</button>
+					<button class="custom-btn" onclick="openProduct()">Buy Products</button>
 					<div id="product-modal" class="modal">
 						<div class="modal-content animate">
 							<button  class="closebtn" type="button" onclick="closeProduct()" 
@@ -142,7 +166,7 @@
 									data-item-price="79.99"
 									data-item-url="/"
 									data-item-description="sapiente ut aut reiciendis"
-									data-item-image="./static/pics/item-1.jpg"
+									data-item-image="./static/pics/item-1.webp"
 									data-item-name="Coffee Beans">Add to cart</button>
 								</div>
 								<div class="menu-list">
@@ -217,8 +241,8 @@
 					</div>
 				</section>
 				<section id="contact" class="content">
-					<h1 class="section-head">Contact Us</h1>
-					<h4 class="text-layout">Email <br> Send to cdm@mail.com</h4>
+					<p class="section-head">Contact Us</p>
+					<p class="text-layout">Email <br> Send to cdm@mail.com</p>
 					<div class="email-form">
 						<form name="email-us" netlify>
 							<input type="text" placeholder="Name" name="name" required>
@@ -227,23 +251,23 @@
 							<button type="submit" class="custom-btn">Send</button>
 						</form>
 					</div>
-					<h4 class="text-layout">Phone <br> Main Shop: +123 45 678
+					<p class="text-layout">Phone <br> Main Shop: +123 45 678
 					<br> West Central Chain Main: +123 45 678
 					<br> East Central Chain Main: +123 45 678 
-					<br> North Central Chain Main: +123 45 678</h4>
+					<br> North Central Chain Main: +123 45 678</p>
 					
-					<h4 class="text-layout">Address <br> Main Shop: Ducimus qui blanditiis St. 
+					<p class="text-layout">Address <br> Main Shop: Ducimus qui blanditiis St. 
 					<br> West Central Chain Main: Nam libero tempore St.
 					<br> East Central Chain Main: Itaque earum rerum Drive
-					<br> North Central Chain Main: Nobis est eligendi Road</h4>
+					<br> North Central Chain Main: Nobis est eligendi Road</p>
 					
-					<h4 class="text-layout">Shop Hours<br>
+					<p class="text-layout">Shop Hours<br>
 					All shops have the autonomy of setting their open hours and days.
-					<br>Generally, shops are open 9AM to 9PM, Mondays to Sundays.</h4>
+					<br>Generally, shops are open 9AM to 9PM, Mondays to Sundays.</p>
 					
 				</section>
 				<section id="about" class="content">
-					<h1 class="section-head">About Us</h1>
+					<p class="section-head">About Us</p>
 					<p class="text-layout">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
 					Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
 					<p class="text-layout">Ut enim ad minima veniam, quis nostrum exercitationem. 
@@ -256,7 +280,11 @@
 					For projects, email to nvqa.business@gmail.com</strong></p>
 				</section>
 				<div>
-					<img src="./static/pics/coffee-cup.jpg" alt="cup" width="100%" height="100%" />
+					<picture>
+						<source srcset="./static/pics/coffee-cup.webp" type="image/webp">
+						<source srcset="./static/pics/coffee-cup.jpg" type="image/jpg"> 
+						<img src="./static/pics/coffee-cup.jpg" alt="cup" width="100%" height="100%" />
+					</picture>
 				</div>				
 			</div>
 			<div id="snipcart" data-api-key="MGVhYzg0NzItMzgzYy00Yzg4LTgxNzctZWE3NDUyNzRiNDAwNjM3MjI5MDA3NjcwMjQwMzAy" hidden></div>

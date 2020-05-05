@@ -1,7 +1,16 @@
+
+//query screen size
+const screen = window.matchMedia( "(max-width: 425px)" );
+
 //main panels
 function openNav() {
-	document.getElementById("sidepanel").style.width = "40%";
-	document.getElementById("right-panel").style.width = "60%";
+	if (screen.matches) {
+		document.getElementById("sidepanel").style.width = "20%";
+		document.getElementById("right-panel").style.width = "80%";
+	} else {
+		document.getElementById("sidepanel").style.width = "40%";
+		document.getElementById("right-panel").style.width = "60%";
+	}
 }
 
 function closeNav() {
