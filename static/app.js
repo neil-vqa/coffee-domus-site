@@ -26,3 +26,10 @@ function openProduct() {
 function closeProduct() {
 	document.getElementById('product-modal').style.display='none';
 }
+
+//date and time picker
+$('.datepicker').pickadate()
+$('.timepicker').pickatime({
+	min: [9,0],
+	max: [20,30]
+})

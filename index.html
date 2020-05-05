@@ -8,9 +8,12 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@500&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.11/default/snipcart.css" />
 	<link rel="shortcut icon" href="./static/favicon.ico">
+	<link rel="stylesheet" href="./static/default.css">
+	<link rel="stylesheet" href="./static/default.date.css">
+	<link rel="stylesheet" href="./static/default.time.css">
 	<link rel="stylesheet" href="./static/custom.css">
 	
-	<script src="https://kit.fontawesome.com/9b56a9cf19.js" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
 	
 </head>
 <body>
@@ -78,12 +81,12 @@
 					<div id="reserve-form" class="modal">
 						<form name="reservations" class="modal-content animate" netlify>
 							<div class="fields">
-								<h3 class="modal-title">Please provide your reservation details.</h3>
+								<h4 class="modal-title">Please provide your reservation details.</h4>
 								<input type="text" placeholder="Name" name="name" required>
 								<input type="email" placeholder="Email" name="email" required>				
 								<input type="text" placeholder="Phone number" name="phone" required>
-								<input type="date" placeholder="Reservation date" name="date" required>
-								<input type="text" placeholder="Reservation time" name="time" required>
+								<input type="text" placeholder="Reservation date" name="date" class="datepicker" required>
+								<input type="text" placeholder="Reservation time" name="time" class="timepicker" required>
 								<input type="number" placeholder="Number of guests" name="person" required>
 								<input type="text" placeholder="Specify other requests (optional)" name="other">
 								<button class="custom-btn" type="submit" style="margin-top: 30px;">Reserve</button>
@@ -261,6 +264,10 @@
 		</div>
 	</main>
 	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" type="text/javascript"></script>
+	<script src="./static/picker.js" type="text/javascript"></script>
+	<script src="./static/picker.date.js" type="text/javascript"></script>
+	<script src="./static/picker.time.js" type="text/javascript"></script>
 	<script src="./static/app.js" type="text/javascript"></script>
 	
 </body>
