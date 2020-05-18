@@ -130,6 +130,10 @@ html, body {
 	transition: 0.3s;
 }
 
+#reservations, #contact {
+	background-color: #111;
+}
+
 .content {
 	padding: 40px;
 }
