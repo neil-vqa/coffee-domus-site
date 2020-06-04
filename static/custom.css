@@ -67,6 +67,7 @@ html, body {
 	color: #ffffff;
 	padding: 10px 15px;
 	border: none;
+	border-radius: 10px;
 	cursor: pointer;
 }
 
@@ -204,6 +205,7 @@ html, body {
 	padding: 14px 20px;
 	margin: 10px auto;
 	border: none;
+	border-radius: 10px;
 	cursor: pointer;
 	width: 40%;
 }
@@ -220,12 +222,13 @@ html, body {
 	padding: 14px 20px;
 	margin: 10px auto;
 	border: none;
+	border-radius: 10px;
 	cursor: pointer;
 	width: 40%;
 }
 
 .cancel-btn:hover {
-	opacity: 0.5;
+	opacity: 0.7;
 }
 
 input, textarea {
@@ -268,7 +271,8 @@ input, textarea {
 	background-color: #555555;
 	margin: auto;
 	padding: 30px;
-	width: 70%;	
+	width: 70%;
+	border-radius: 15px;	
 }	
 
 .animate {
@@ -327,6 +331,7 @@ input, textarea {
 	padding: 14px 20px;
 	margin: 10px auto;
 	border: none;
+	border-radius: 10px;
 	cursor: pointer;
 	width: auto;
 }
