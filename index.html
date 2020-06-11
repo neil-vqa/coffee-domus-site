@@ -98,22 +98,22 @@
 						</ul>
 					</div>
 					<button class="custom-btn" onclick="openReserve()">Make a Reservation</button>
-					<div id="reserve-form" class="modal">
-						<form name="reservations" class="modal-content animate" netlify>
-							<div class="fields">
-								<h4 class="modal-title">Please provide your reservation details.</h4>
-								<input type="text" placeholder="Name" name="name" required>
-								<input type="email" placeholder="Email" name="email" required>				
-								<input type="text" placeholder="Phone number" name="phone" required>
-								<input type="text" placeholder="Reservation date" name="date" class="datepicker" required>
-								<input type="text" placeholder="Reservation time" name="time" class="timepicker" required>
-								<input type="number" placeholder="Number of guests" name="person" required>
-								<input type="text" placeholder="Specify other requests (optional)" name="other">
-								<button class="custom-btn" type="submit" style="margin-top: 30px;">Reserve</button>
-								<button  class="cancel-btn" type="button" onclick="closeReserve()">Cancel</button>		
-							</div>
-						</form>
-					</div>
+						<div id="reserve-form" class="modal">
+							<form name="reservations" class="modal-content" netlify>
+								<div class="fields">
+									<h4 class="modal-title">Please provide your reservation details.</h4>
+									<input type="text" placeholder="Name" name="name" required>
+									<input type="email" placeholder="Email" name="email" required>				
+									<input type="text" placeholder="Phone number" name="phone" required>
+									<input type="text" placeholder="Reservation date" name="date" class="datepicker" required>
+									<input type="text" placeholder="Reservation time" name="time" class="timepicker" required>
+									<input type="number" placeholder="Number of guests" name="person" required>
+									<input type="text" placeholder="Specify other requests (optional)" name="other">
+									<button class="custom-btn" type="submit" style="margin-top: 30px;">Reserve</button>
+									<button  class="cancel-btn" type="button" onclick="closeReserve()">Cancel</button>		
+								</div>
+							</form>
+						</div>
 				</section>
 				<section id="delivery" class="content">
 					<p class="section-head">We Deliver</p>
@@ -155,7 +155,7 @@
 					</div>
 					<button class="custom-btn" onclick="openProduct()">Buy Products</button>
 					<div id="product-modal" class="modal">
-						<div class="modal-content animate">
+						<div class="modal-content">
 							<button  class="closebtn" type="button" onclick="closeProduct()" 
 							style="background-color: #444444;">Close</button>
 							<h3 class="modal-title">Our In-house Quality Products</h3>
